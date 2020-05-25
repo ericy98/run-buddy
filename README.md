@@ -12,3 +12,5 @@ https://ericy98.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Eric Yarbrough
+
+### ©️2019 Run Buddy, Inc
