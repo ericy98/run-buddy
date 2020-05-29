@@ -351,6 +351,7 @@ header nav ul li a:hover {
         background: var(--secondary-color);
         color: var(--primary-color);
         flex: 1;
+
 }
 
 /*.trainer img {
@@ -420,8 +421,13 @@ header nav ul li a:hover {
         position: absolute;
         top: 0;
         left: 0;
+        opacity: 0;
+        transition: linear;
 }
 
+.trainer:hover .trainer-img::after {
+        opacity: 1;
+}
 /* end meet-the-trainers style */
 
 /* start service plans style */
