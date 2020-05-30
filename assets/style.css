@@ -386,6 +386,7 @@ header nav ul li a:hover {
         align-items: flex-end;
         background-size: cover;
         position: relative;
+        overflow: hidden;
 }
 
 .trainer-1 {
@@ -405,12 +406,17 @@ header nav ul li a:hover {
         z-index: 1;
         font-size: 28px;
         margin: 5px;
+        top: 200px;
+        transition: transform 0.6s;
 }
 
 .trainer-img h4 {
         position: relative;
         z-index: 1;
         font-size: 22px;
+        top: 200px;
+        transition: 0.6s;
+        transition-delay: 0.2s;
 }
 
 .trainer-img::after {
@@ -422,12 +428,17 @@ header nav ul li a:hover {
         top: 0;
         left: 0;
         opacity: 0;
-        transition: linear;
+        transition: all 1s; 
 }
 
 .trainer:hover .trainer-img::after {
         opacity: 1;
 }
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+        transform: translate(0px,-200px)
+}
+
 /* end meet-the-trainers style */
 
 /* start service plans style */
